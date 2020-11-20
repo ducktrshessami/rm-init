@@ -1,14 +1,19 @@
 {
-  "name": "static-site",
+  "name": "rm-init",
   "version": "1.0.0",
-  "description": "",
+  "description": "README initializer",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "author": "ducktrshessami",
+  "license": "MIT",
   "dependencies": {
     "inquirer": "^6.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ducktrshessami/rm-init.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ducktrshessami/rm-init/issues"
+  },
+  "homepage": "https://github.com/ducktrshessami/rm-init#readme"
 }
