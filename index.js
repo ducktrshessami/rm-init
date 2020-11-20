@@ -70,7 +70,7 @@ function writeToFile(fileName, data) {
 function init() {
     prompt(questions)
         .then(generateMarkdown)
-        .then(md => writeToFile("asdf.md", md))
+        .then(md => writeToFile("README.md", md))
         .catch(console.error);
 }
 
