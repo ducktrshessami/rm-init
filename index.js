@@ -8,6 +8,53 @@ const questions = [
         type: "input",
         message: "Project title:",
         name: "title"
+    },
+    {
+        type: "input",
+        message: "Description:",
+        name: "desc"
+    },
+    {
+        type: "input",
+        message: "Installation:",
+        name: "install"
+    },
+    {
+        type: "input",
+        message: "Usage:",
+        name: "usage"
+    },
+    {
+        type: "input",
+        message: "Contribution guidelines:",
+        name: "contrib"
+    },
+    {
+        type: "input",
+        message: "Testing:",
+        name: "test"
+    },
+    {
+        type: "list",
+        message: "License:",
+        choices: [
+            "UNLICENSED",
+            "ISC",
+            "MIT",
+            "Apache-2.0",
+            "GPL-3.0"
+        ],
+        name: "lisc"
+    },
+    {
+        type: "input",
+        message: "GitHub username:",
+        name: "github"
+    },
+    {
+        type: "input",
+        message: "E-mail:",
+        name: "email"
     }
 ];
 
