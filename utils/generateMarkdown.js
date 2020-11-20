@@ -52,10 +52,9 @@ ${licenseInfo[data.lisc].url ? `[${licenseInfo[data.lisc].name}](${licenseInfo[d
 
 ## Questions
 
-[GitHub:${data.github}](https://github.com/${data.github})
+GitHub: [${data.github}](https://github.com/${data.github})
 
 E-mail: [${data.email}](mailto:${data.email})
-
 `;
 }
 
