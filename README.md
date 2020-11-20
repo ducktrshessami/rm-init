@@ -1,6 +1,6 @@
 # rm-init
 
-![Unlicensed](https://img.shields.io/badge/license-UNLICENSED-green)
+![MIT License](https://img.shields.io/badge/license-MIT-green)
 
 ## Table of Contents
   1. [Description](#Description)
@@ -39,7 +39,7 @@ node .
 
 ## License
 
-Unlicensed
+[MIT License](https://opensource.org/licenses/MIT)
 
 ## Questions
 

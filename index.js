@@ -44,7 +44,7 @@ const questions = [
             "Apache-2.0",
             "GPL-3.0"
         ],
-        name: "lisc"
+        name: "lic"
     },
     {
         type: "input",

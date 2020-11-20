@@ -2,6 +2,22 @@ const licenseInfo = {
   UNLICENSED: {
     name: "Unlicensed",
     url: ""
+  },
+  ISC: {
+    name: "ISC License",
+    url: "https://www.isc.org/licenses/"
+  },
+  MIT: {
+    name: "MIT License",
+    url: "https://opensource.org/licenses/MIT"
+  },
+  "Apache-2.0": {
+    name: "Apache License 2.0",
+    url: "https://www.apache.org/licenses/LICENSE-2.0"
+  },
+  "GPL-3.0": {
+    name: "GNU General Public License v3.0",
+    url: "https://www.gnu.org/licenses/gpl-3.0-standalone.html"
   }
 }
 
@@ -9,7 +25,7 @@ const licenseInfo = {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-![${licenseInfo[data.lisc].name}](https://img.shields.io/badge/license-${data.lisc}-green)
+![${licenseInfo[data.lic].name}](https://img.shields.io/badge/license-${data.lic}-green)
 
 ## Table of Contents
   1. [Description](#Description)
@@ -48,7 +64,7 @@ ${data.test}
 
 ## License
 
-${licenseInfo[data.lisc].url ? `[${licenseInfo[data.lisc].name}](${licenseInfo[data.lisc].url})` : licenseInfo[data.lisc].name}
+${licenseInfo[data.lic].url ? `[${licenseInfo[data.lic].name}](${licenseInfo[data.lic].url})` : licenseInfo[data.lic].name}
 
 ## Questions
 
