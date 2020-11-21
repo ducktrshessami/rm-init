@@ -2,7 +2,7 @@
 
 const fs = require("fs").promises; // File I/O
 const { prompt } = require("inquirer"); // User input
-const generateMarkdown = require("./utils/generateMarkdown"); // It's in the module name
+const generateMarkdown = require("../utils/generateMarkdown"); // It's in the module name
 
 // array of questions for user
 const questions = [
