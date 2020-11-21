@@ -9,32 +9,38 @@ const questions = [
     {
         type: "input",
         message: "Project title:",
-        name: "title"
+        name: "title",
+        prefix: ""
     },
     {
         type: "input",
         message: "Description:",
-        name: "desc"
+        name: "desc",
+        prefix: ""
     },
     {
         type: "input",
         message: "Installation:",
-        name: "install"
+        name: "install",
+        prefix: ""
     },
     {
         type: "input",
         message: "Usage:",
-        name: "usage"
+        name: "usage",
+        prefix: ""
     },
     {
         type: "input",
         message: "Contribution guidelines:",
-        name: "contrib"
+        name: "contrib",
+        prefix: ""
     },
     {
         type: "input",
         message: "Testing:",
-        name: "test"
+        name: "test",
+        prefix: ""
     },
     {
         type: "list",
@@ -46,33 +52,51 @@ const questions = [
             "Apache-2.0",
             "GPL-3.0"
         ],
-        name: "lic"
+        name: "lic",
+        prefix: ""
     },
     {
         type: "input",
         message: "GitHub username:",
-        name: "github"
+        name: "github",
+        prefix: ""
     },
     {
         type: "input",
         message: "E-mail:",
-        name: "email"
+        name: "email",
+        prefix: ""
     }
 ];
 
-// function to write README file
-function writeToFile(fileName, data) {
-    return fs.writeFile(fileName, data);
-    /*
-    Why make a function just to call fs.writeFile with the same params?
-    */
+var outputFile = "README.md";
+
+// handle possible flags
+function handleArgs() {
+    for (let i = 0; i < process.argv.length; i++) {
+        switch (process.argv[i]) {
+            case "-o":
+            case "--output":
+                if (i == process.argv.length - 1) {
+                    console.error("Output file not specified");
+                    return false;
+                }
+                else {
+                    outputFile = process.argv[++i];
+                }
+                break;
+        }
+    }
 }
 
 // function to initialize program
 function init() {
-    prompt(questions).then(response => {
-        writeToFile(`${response.title}.md`, generateMarkdown(response)).catch(console.error);
-    }).catch(console.error);
+    if (handleArgs()) {
+        prompt(questions)
+            .then(generateMarkdown)
+            .then(md => fs.writeFile(outputFile, md))
+            .catch(console.error);
+    }
 }
 
 // function call to initialize program

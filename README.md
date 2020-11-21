@@ -12,11 +12,13 @@ npm install -g github:ducktrshessami/rm-init
 
 ## Usage
 
-After installing this package, run the following command in the working directory:
+```
+rm-init [-o filename]
+```
 
-```
-rm-init
-```
+`-o, --output`: Specifiy the output filename
+
+Defaults output file to `README.md` and overwrites any existing output file
 
 ## Video Example
 
