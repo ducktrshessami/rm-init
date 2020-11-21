@@ -13,7 +13,7 @@ npm install -g github:ducktrshessami/rm-init
 ## Usage
 
 ```
-rm-init [-o filename]
+rm-init [[-o | --output] filename]
 ```
 
 `-o, --output`: Specifiy the output filename
