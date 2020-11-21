@@ -4,7 +4,7 @@
   "description": "README initializer",
   "main": "./lib/no.js",
   "bin": {
-    "rminit": "index.js"
+    "rminit": "./bin/index.js"
   },
   "author": "ducktrshessami",
   "license": "MIT",
