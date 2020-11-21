@@ -69,6 +69,7 @@ const questions = [
     }
 ];
 
+// default output file
 var outputFile = "README.md";
 
 // handle possible flags
@@ -78,7 +79,7 @@ function handleArgs() {
             case "-o":
             case "--output":
                 if (i == process.argv.length - 1) {
-                    console.error("Output file not specified");
+                    printUsage();
                     return false;
                 }
                 else {
@@ -88,6 +89,11 @@ function handleArgs() {
         }
     }
     return true;
+}
+
+// print usage text
+function printUsage() {
+    console.log(`Usage: rm-init [[-o | --output] filename]`);
 }
 
 // function to initialize program
