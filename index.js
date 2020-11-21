@@ -87,6 +87,7 @@ function handleArgs() {
                 break;
         }
     }
+    return true;
 }
 
 // function to initialize program
