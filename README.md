@@ -2,9 +2,11 @@
 
 A CLI program that generates a simple README.md based on information given
 
+Powered by Node.js
+
 ## Installation
 
-After installing Node.js, run the following command:
+After installing [Node.js](https://nodejs.org/), run the following command in your package directory:
 
 ```
 npm install -g github:ducktrshessami/rm-init
