@@ -3,7 +3,9 @@
   "version": "1.1.2",
   "description": "README initializer",
   "main": "./lib/no.js",
-  "bin": "index.js",
+  "bin": {
+    "rminit": "index.js"
+  },
   "author": "ducktrshessami",
   "license": "MIT",
   "dependencies": {

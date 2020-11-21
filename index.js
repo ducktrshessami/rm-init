@@ -93,7 +93,7 @@ function handleArgs() {
 
 // print usage text
 function printUsage() {
-    console.log(`Usage: rm-init [[-o | --output] filename]`);
+    console.log(`Usage: rminit [[-o | --output] filename]`);
 }
 
 // function to initialize program
