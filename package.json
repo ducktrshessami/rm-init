@@ -2,7 +2,8 @@
   "name": "rm-init",
   "version": "1.0.0",
   "description": "README initializer",
-  "main": "index.js",
+  "main": "./lib/no.js",
+  "bin": "index.js",
   "author": "ducktrshessami",
   "license": "MIT",
   "dependencies": {

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require("fs").promises; // File I/O
 const { prompt } = require("inquirer"); // User input
 const generateMarkdown = require("./utils/generateMarkdown"); // It's in the module name
@@ -60,7 +62,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data).catch(console.error);
+    return fs.writeFile(fileName, data);
     /*
     Why make a function just to call fs.writeFile with the same params?
     */
@@ -68,10 +70,9 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-    prompt(questions)
-        .then(generateMarkdown)
-        .then(md => writeToFile("README.md", md))
-        .catch(console.error);
+    prompt(questions).then(response => {
+        writeToFile(`${response.title}.md`, generateMarkdown(response)).catch(console.error);
+    }).catch(console.error);
 }
 
 // function call to initialize program
