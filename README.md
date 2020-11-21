@@ -1,48 +1,29 @@
 # rm-init
 
-![MIT License](https://img.shields.io/badge/license-MIT-green)
-
-## Table of Contents
-  1. [Description](#Description)
-  2. [Installation](#Installation)
-  3. [Usage](#Usage)
-  4. [Contributing](#Contributing)
-  5. [Tests](#Tests)
-  6. [License](#License)
-  7. [Questions](#Questions)
-
-## Description
-
-A README initializer
+A CLI program that generates a simple README.md based on information given
 
 ## Installation
 
+After installing Node.js, run the following command:
+
 ```
-npm install github:ducktrshessami/rm-init
+npm install -g github:ducktrshessami/rm-init
 ```
 
 ## Usage
 
-```
-node .
-```
-
-## Contributing
-
-
-
-## Tests
+After installing this package, run the following command in the working directory:
 
 ```
-
+rm-init
 ```
 
-## License
+## Video Example
 
-[MIT License](https://opensource.org/licenses/MIT)
+<details>
 
-## Questions
+<summary>Show/Hide</summary>
 
-GitHub: [ducktrshessami](https://github.com/ducktrshessami)
+###### ~~Still haven't recorded the video yet~~
 
-E-mail: [jwee761@gmail.com](mailto:jwee761@gmail.com)
+</details>
