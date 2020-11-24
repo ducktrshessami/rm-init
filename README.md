@@ -28,6 +28,8 @@ Defaults output file to `README.md` and overwrites any existing output file
 
 <summary>Show/Hide</summary>
 
-###### ~~Still haven't recorded the video yet~~
+![walkthrough](./assets/images/walkthrough.gif)
+
+Example output: [EXAMPLE.md](https://gist.github.com/ducktrshessami/2b31bd73e21b8dec1d64ae36f12c86a5)
 
 </details>
