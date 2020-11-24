@@ -25,7 +25,7 @@ const licenseInfo = {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-![${licenseInfo[data.lic].name}](https://img.shields.io/badge/license-${data.lic}-green)
+![${licenseInfo[data.lic].name}](https://img.shields.io/badge/license-${data.lic.replace(/-/g, "%20")}-green)
 
 ## Table of Contents
   1. [Description](#Description)
